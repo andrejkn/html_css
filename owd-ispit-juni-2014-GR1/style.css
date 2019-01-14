@@ -1,0 +1,121 @@
+/* Ime Prezime Indeks
+
+Grupa 1
+
+-------------------------------------------------- */
+body {
+  font-family: "Trebuchet MS", Verdana, Arial, Helvetica, sans-serif;
+  font-size: 11px;
+}
+.page-wrapper {
+  position: absolute;
+  width: 100%;
+  background-image: url(img/page_back.gif);
+  background-repeat: repeat-x;
+
+  /**
+   Vrednosta na ovaa boja ja dobiv so pomosh na Chrome dev-tools alatkata,
+   so klikanje na najdolnite pixeli na slikata od pozadinata mi ja detektirashe
+   noja e vrednosta na bojata.
+  */
+  background-color: #fbfbf2;
+}
+
+/** Leva kolona, 295px */
+.intro {
+  float: left;
+  width: 295px;
+  /* background-color: #cc9900; */
+}
+
+.summary {
+  text-align: justify;
+  margin-right: 3px;
+  border-radius: 0px 40px  40px 0px;
+  background-color: #bbbf58;
+  border-right: 3px #fff solid;
+  background-image: url(img/green_top.gif), url(img/green_bottom.gif);
+  background-position: left top, left bottom;
+  background-size: 291px 59px, 291px 59px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+.summary p {
+  padding: 90px 25px 90px 25px;
+  color: #fff;
+  line-height: 20px;
+}
+
+.main {
+  background-image: url(img/fork.gif), url(img/content_back.gif);
+  background-repeat: no-repeat, repeat-x;
+  background-position: top right, top left;
+
+  float: left;
+  width: 800px;
+  background-color: #fff;
+}
+
+.main p {
+  text-align: justify;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+}
+
+header {
+  width: 290px;
+  height: 180px;
+  background-image: url(img/body_back.gif);
+}
+
+header h1, h2 {
+  display: none;
+}
+
+/** Desna kolona 170px */
+.sidebar {
+  float: right;
+  width: 170px;
+  /* background-color: #cee233; */
+}
+
+/**
+ Da go podbutneme "Kulturno Odnesuvanje"
+ paragrafot nadole za 200px, da ne poshnuva
+ vrv banerot so vilushkata
+*/
+.behaviour {
+  margin-top: 200px;
+}
+
+/**
+ Naslovite gi pravime nevidlivi (transparent)
+ zosto ke gi zamenime so sliki
+*/
+.behaviour h3,
+.manners h3,
+.code h3,
+.differences h3 {
+  color: transparent;
+}
+
+/**
+ Slika za naslovot "Kulturno Odnesuvanje".
+ Go koristime ::before selektorot ca da
+ vmetneme kontent slika
+*/
+.behaviour h3::before {
+  content: url(img/heading_1.gif);
+}
+
+.manners h3::before {
+  content: url(img/heading_2.gif);
+}
+
+.code h3::before {
+  content: url(img/heading_3.gif);
+}
+.differences h3::before {
+  content: url(img/heading_4.gif);
+}
