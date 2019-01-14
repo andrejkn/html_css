@@ -82,8 +82,7 @@ header h1, h2 {
 
 /**
  Da go podbutneme "Kulturno Odnesuvanje"
- paragrafot nadole za 200px, da ne poshnuva
- vrv banerot so vilushkata
+ paragrafot nadole za 200px, da ne pochnuva od gorniot kraj na stranata.
 */
 .behaviour {
   margin-top: 200px;
@@ -91,7 +90,7 @@ header h1, h2 {
 
 /**
  Naslovite gi pravime nevidlivi (transparent)
- zosto ke gi zamenime so sliki
+ zosto ke gi zamenime so sliki podole.
 */
 .behaviour h3,
 .manners h3,
@@ -102,8 +101,8 @@ header h1, h2 {
 
 /**
  Slika za naslovot "Kulturno Odnesuvanje".
- Go koristime ::before selektorot ca da
- vmetneme kontent slika
+ Go koristime ::before selektorot za da
+ vmetneme slika koja ke se sodrzi vo <h3> elementot.
 */
 .behaviour h3::before {
   content: url(img/heading_1.gif);
